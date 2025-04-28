@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>My Landing Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Welcome to Our Website</h2>
+      <p>Discover amazing content and grow with us.</p>
+      <button onclick="scrollToContact()">Get Started</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="feature-box">
+        <h3>Fast</h3>
+        <p>Super fast performance with modern tech.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Responsive</h3>
+        <p>Looks great on every device.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Easy to Use</h3>
+        <p>Simple, clean, and effective design.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are passionate about building beautiful websites that are both functional and user-friendly. Join us on our journey!</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@example.com</p>
+      <p>Phone: +91 9876543210</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Landing Page. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToContact() {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+}
+
+  </script>
+</body>
+</html>
